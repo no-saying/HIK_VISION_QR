@@ -1,0 +1,18 @@
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# IDE
+.vs/
+*.user
+*.suo
+*.cache
+
+# NuGet
+packages/
+
+# Config with secrets
+*.local.json

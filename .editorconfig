@@ -1,0 +1,23 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.cs]
+indent_size = 4
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
+csharp_new_line_before_open_brace = all
+csharp_preserve_single_line_statements = false
+csharp_preserve_single_line_blocks = true
+
+[*.{csproj,xml,config,resx}]
+indent_size = 2
+
+[*.{json,yml,yaml}]
+indent_size = 2

@@ -1,0 +1,55 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "args": [
+        "build",
+        "-p:Platform=x64",
+        "-p:Configuration=Debug"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build-release",
+      "command": "dotnet",
+      "type": "process",
+      "group": "build",
+      "args": [
+        "build",
+        "-p:Platform=x64",
+        "-p:Configuration=Release"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "clean",
+      "command": "dotnet",
+      "type": "process",
+      "group": "build",
+      "args": [
+        "clean",
+        "-p:Platform=x64",
+        "-p:Configuration=Debug"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "restore",
+      "command": "dotnet",
+      "type": "process",
+      "group": "build",
+      "args": [
+        "restore",
+        "-p:Platform=x64"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

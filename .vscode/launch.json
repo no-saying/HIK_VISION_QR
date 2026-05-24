@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch HIK_DEMON (Debug)",
+      "type": "clr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/x64/Debug/HIK_DEMON.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "externalTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Launch HIK_DEMON (Release)",
+      "type": "clr",
+      "request": "launch",
+      "preLaunchTask": "build-release",
+      "program": "${workspaceFolder}/bin/x64/Release/HIK_DEMON.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "externalTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "仅编译 (不启动)",
+      "type": "clr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/x64/Debug/HIK_DEMON.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "externalTerminal",
+      "justMyCode": true,
+      "noDebug": true
+    }
+  ]
+}
